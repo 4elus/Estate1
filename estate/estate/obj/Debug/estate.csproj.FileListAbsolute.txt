@@ -1,0 +1,10 @@
+C:\Users\Alex\Downloads\Estate1\estate\estate\bin\Debug\estate.exe.config
+C:\Users\Alex\Downloads\Estate1\estate\estate\bin\Debug\estate.exe
+C:\Users\Alex\Downloads\Estate1\estate\estate\bin\Debug\estate.pdb
+C:\Users\Alex\Downloads\Estate1\estate\estate\obj\Debug\estate.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Downloads\Estate1\estate\estate\obj\Debug\estate.Form1.resources
+C:\Users\Alex\Downloads\Estate1\estate\estate\obj\Debug\estate.Properties.Resources.resources
+C:\Users\Alex\Downloads\Estate1\estate\estate\obj\Debug\estate.csproj.GenerateResource.cache
+C:\Users\Alex\Downloads\Estate1\estate\estate\obj\Debug\estate.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Downloads\Estate1\estate\estate\obj\Debug\estate.exe
+C:\Users\Alex\Downloads\Estate1\estate\estate\obj\Debug\estate.pdb
