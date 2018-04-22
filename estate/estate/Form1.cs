@@ -28,19 +28,48 @@ namespace estate
             this.estateTableAdapter.Fill(this.dataBaseDataSet.Estate);
 
         }
-
+        public string txt = string.Empty;
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            
-     
-            // Устанавливает фильтр
-            estateBindingSource.Filter = "Область = \'" + cityCmb.Text + "\'";
-            estateBindingSource.Filter = "Статус = \'" + statusCmb.Text + "\'";
-            estateBindingSource.Filter = "Этаж = \'" + roomsCmb.Text + "\'";
+
+            txt = "";
+            string op = "and ";
+            string[] a;
+
+            if (cityCmb.Text != "")
+            {
+                estateBindingSource.Filter = "Область = \'" + cityCmb.Text + "\'";
+                txt += "Область LIKE '%" + cityCmb.Text + "%'";
+            }
+
+            if (roomsCmb.Text != "")
+            {
+                if (txt != "") txt += op;
+                
+                    
+                txt += "Этаж LIKE '%" + roomsCmb.Text + "%'";
+            }
+
+            if (statusCmb.Text != "")
+            {
+                if (txt != "") txt += op;
+                txt += "Статус LIKE '%" + statusCmb.Text + "%'";
+            }
+
+            a = new string[dataGridView1.RowCount];
+
             if (priceTxt.Text != "")
             {
-                estateBindingSource.Filter = "Цена = \'" + Convert.ToInt32(priceTxt.Text) + " руб." + "\'";
+                if (txt != "") txt += op;
+
+                txt += "Цена <= " + Convert.ToInt32(priceTxt.Text);
+
+
             }
+           
+            estateBindingSource.Filter = txt;
+           
+
         }
     }
 }

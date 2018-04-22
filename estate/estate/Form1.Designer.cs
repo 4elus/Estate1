@@ -92,7 +92,8 @@
             this.targetCmb.FormattingEnabled = true;
             this.targetCmb.Items.AddRange(new object[] {
             "Работа",
-            "Отдых"});
+            "Отдых",
+            "Переезд"});
             this.targetCmb.Location = new System.Drawing.Point(172, 57);
             this.targetCmb.Margin = new System.Windows.Forms.Padding(4);
             this.targetCmb.Name = "targetCmb";
@@ -129,7 +130,9 @@
             this.roomsCmb.FormattingEnabled = true;
             this.roomsCmb.Items.AddRange(new object[] {
             "Студия",
-            "Студия"});
+            "1-комнатная",
+            "2-комнатная",
+            "3-комнатная"});
             this.roomsCmb.Location = new System.Drawing.Point(737, 57);
             this.roomsCmb.Margin = new System.Windows.Forms.Padding(4);
             this.roomsCmb.Name = "roomsCmb";
@@ -388,12 +391,11 @@
             this.адресDataGridViewTextBoxColumn.DataPropertyName = "Адрес";
             this.адресDataGridViewTextBoxColumn.HeaderText = "Адрес";
             this.адресDataGridViewTextBoxColumn.Name = "адресDataGridViewTextBoxColumn";
-            this.адресDataGridViewTextBoxColumn.Width = 180;
             // 
             // колвоКомнатDataGridViewTextBoxColumn
             // 
             this.колвоКомнатDataGridViewTextBoxColumn.DataPropertyName = "Кол-во комнат";
-            this.колвоКомнатDataGridViewTextBoxColumn.HeaderText = "Этаж";
+            this.колвоКомнатDataGridViewTextBoxColumn.HeaderText = "Кол-во комнат";
             this.колвоКомнатDataGridViewTextBoxColumn.Name = "колвоКомнатDataGridViewTextBoxColumn";
             // 
             // типДомаDataGridViewTextBoxColumn
@@ -417,7 +419,7 @@
             // этажDataGridViewTextBoxColumn
             // 
             this.этажDataGridViewTextBoxColumn.DataPropertyName = "Этаж";
-            this.этажDataGridViewTextBoxColumn.HeaderText = "Кол-во комнат";
+            this.этажDataGridViewTextBoxColumn.HeaderText = "Этаж";
             this.этажDataGridViewTextBoxColumn.Name = "этажDataGridViewTextBoxColumn";
             // 
             // ценаDataGridViewTextBoxColumn
