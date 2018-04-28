@@ -71,6 +71,15 @@ namespace estate
            
 
         }
+
+        private void targetCmb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (targetCmb.Text == "Переезд")
+            {
+                Test f = new Test();
+                f.Show();
+            }
+        }
     }
 }
 

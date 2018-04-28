@@ -42,6 +42,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.updateBtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.владелецDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.областьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.адресDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.колвоКомнатDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.типДомаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.статусDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.площадьМDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.этажDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ценаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataBaseDataSet = new estate.DataBaseDataSet();
             this.estateTableAdapter = new estate.DataBaseDataSetTableAdapters.EstateTableAdapter();
@@ -58,16 +68,6 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.searchBtn = new System.Windows.Forms.Button();
-            this.кодDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.владелецDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.областьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.адресDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.колвоКомнатDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.типДомаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.статусDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.площадьМDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.этажDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ценаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.estateBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseDataSet)).BeginInit();
@@ -99,6 +99,7 @@
             this.targetCmb.Name = "targetCmb";
             this.targetCmb.Size = new System.Drawing.Size(171, 25);
             this.targetCmb.TabIndex = 1;
+            this.targetCmb.SelectedIndexChanged += new System.EventHandler(this.targetCmb_SelectedIndexChanged);
             // 
             // cityCmb
             // 
@@ -226,6 +227,66 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1119, 305);
             this.dataGridView1.TabIndex = 11;
+            // 
+            // кодDataGridViewTextBoxColumn
+            // 
+            this.кодDataGridViewTextBoxColumn.DataPropertyName = "Код";
+            this.кодDataGridViewTextBoxColumn.HeaderText = "Код";
+            this.кодDataGridViewTextBoxColumn.Name = "кодDataGridViewTextBoxColumn";
+            // 
+            // владелецDataGridViewTextBoxColumn
+            // 
+            this.владелецDataGridViewTextBoxColumn.DataPropertyName = "Владелец";
+            this.владелецDataGridViewTextBoxColumn.HeaderText = "Владелец";
+            this.владелецDataGridViewTextBoxColumn.Name = "владелецDataGridViewTextBoxColumn";
+            // 
+            // областьDataGridViewTextBoxColumn
+            // 
+            this.областьDataGridViewTextBoxColumn.DataPropertyName = "Область";
+            this.областьDataGridViewTextBoxColumn.HeaderText = "Область";
+            this.областьDataGridViewTextBoxColumn.Name = "областьDataGridViewTextBoxColumn";
+            // 
+            // адресDataGridViewTextBoxColumn
+            // 
+            this.адресDataGridViewTextBoxColumn.DataPropertyName = "Адрес";
+            this.адресDataGridViewTextBoxColumn.HeaderText = "Адрес";
+            this.адресDataGridViewTextBoxColumn.Name = "адресDataGridViewTextBoxColumn";
+            // 
+            // колвоКомнатDataGridViewTextBoxColumn
+            // 
+            this.колвоКомнатDataGridViewTextBoxColumn.DataPropertyName = "Кол-во комнат";
+            this.колвоКомнатDataGridViewTextBoxColumn.HeaderText = "Кол-во комнат";
+            this.колвоКомнатDataGridViewTextBoxColumn.Name = "колвоКомнатDataGridViewTextBoxColumn";
+            // 
+            // типДомаDataGridViewTextBoxColumn
+            // 
+            this.типДомаDataGridViewTextBoxColumn.DataPropertyName = "Тип дома";
+            this.типДомаDataGridViewTextBoxColumn.HeaderText = "Тип дома";
+            this.типДомаDataGridViewTextBoxColumn.Name = "типДомаDataGridViewTextBoxColumn";
+            // 
+            // статусDataGridViewTextBoxColumn
+            // 
+            this.статусDataGridViewTextBoxColumn.DataPropertyName = "Статус";
+            this.статусDataGridViewTextBoxColumn.HeaderText = "Статус";
+            this.статусDataGridViewTextBoxColumn.Name = "статусDataGridViewTextBoxColumn";
+            // 
+            // площадьМDataGridViewTextBoxColumn
+            // 
+            this.площадьМDataGridViewTextBoxColumn.DataPropertyName = "Площадь м²";
+            this.площадьМDataGridViewTextBoxColumn.HeaderText = "Площадь м²";
+            this.площадьМDataGridViewTextBoxColumn.Name = "площадьМDataGridViewTextBoxColumn";
+            // 
+            // этажDataGridViewTextBoxColumn
+            // 
+            this.этажDataGridViewTextBoxColumn.DataPropertyName = "Этаж";
+            this.этажDataGridViewTextBoxColumn.HeaderText = "Этаж";
+            this.этажDataGridViewTextBoxColumn.Name = "этажDataGridViewTextBoxColumn";
+            // 
+            // ценаDataGridViewTextBoxColumn
+            // 
+            this.ценаDataGridViewTextBoxColumn.DataPropertyName = "Цена";
+            this.ценаDataGridViewTextBoxColumn.HeaderText = "Цена";
+            this.ценаDataGridViewTextBoxColumn.Name = "ценаDataGridViewTextBoxColumn";
             // 
             // estateBindingSource
             // 
@@ -367,66 +428,6 @@
             this.searchBtn.Text = "Поиск";
             this.searchBtn.UseVisualStyleBackColor = true;
             this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
-            // 
-            // кодDataGridViewTextBoxColumn
-            // 
-            this.кодDataGridViewTextBoxColumn.DataPropertyName = "Код";
-            this.кодDataGridViewTextBoxColumn.HeaderText = "Код";
-            this.кодDataGridViewTextBoxColumn.Name = "кодDataGridViewTextBoxColumn";
-            // 
-            // владелецDataGridViewTextBoxColumn
-            // 
-            this.владелецDataGridViewTextBoxColumn.DataPropertyName = "Владелец";
-            this.владелецDataGridViewTextBoxColumn.HeaderText = "Владелец";
-            this.владелецDataGridViewTextBoxColumn.Name = "владелецDataGridViewTextBoxColumn";
-            // 
-            // областьDataGridViewTextBoxColumn
-            // 
-            this.областьDataGridViewTextBoxColumn.DataPropertyName = "Область";
-            this.областьDataGridViewTextBoxColumn.HeaderText = "Область";
-            this.областьDataGridViewTextBoxColumn.Name = "областьDataGridViewTextBoxColumn";
-            // 
-            // адресDataGridViewTextBoxColumn
-            // 
-            this.адресDataGridViewTextBoxColumn.DataPropertyName = "Адрес";
-            this.адресDataGridViewTextBoxColumn.HeaderText = "Адрес";
-            this.адресDataGridViewTextBoxColumn.Name = "адресDataGridViewTextBoxColumn";
-            // 
-            // колвоКомнатDataGridViewTextBoxColumn
-            // 
-            this.колвоКомнатDataGridViewTextBoxColumn.DataPropertyName = "Кол-во комнат";
-            this.колвоКомнатDataGridViewTextBoxColumn.HeaderText = "Кол-во комнат";
-            this.колвоКомнатDataGridViewTextBoxColumn.Name = "колвоКомнатDataGridViewTextBoxColumn";
-            // 
-            // типДомаDataGridViewTextBoxColumn
-            // 
-            this.типДомаDataGridViewTextBoxColumn.DataPropertyName = "Тип дома";
-            this.типДомаDataGridViewTextBoxColumn.HeaderText = "Тип дома";
-            this.типДомаDataGridViewTextBoxColumn.Name = "типДомаDataGridViewTextBoxColumn";
-            // 
-            // статусDataGridViewTextBoxColumn
-            // 
-            this.статусDataGridViewTextBoxColumn.DataPropertyName = "Статус";
-            this.статусDataGridViewTextBoxColumn.HeaderText = "Статус";
-            this.статусDataGridViewTextBoxColumn.Name = "статусDataGridViewTextBoxColumn";
-            // 
-            // площадьМDataGridViewTextBoxColumn
-            // 
-            this.площадьМDataGridViewTextBoxColumn.DataPropertyName = "Площадь м²";
-            this.площадьМDataGridViewTextBoxColumn.HeaderText = "Площадь м²";
-            this.площадьМDataGridViewTextBoxColumn.Name = "площадьМDataGridViewTextBoxColumn";
-            // 
-            // этажDataGridViewTextBoxColumn
-            // 
-            this.этажDataGridViewTextBoxColumn.DataPropertyName = "Этаж";
-            this.этажDataGridViewTextBoxColumn.HeaderText = "Этаж";
-            this.этажDataGridViewTextBoxColumn.Name = "этажDataGridViewTextBoxColumn";
-            // 
-            // ценаDataGridViewTextBoxColumn
-            // 
-            this.ценаDataGridViewTextBoxColumn.DataPropertyName = "Цена";
-            this.ценаDataGridViewTextBoxColumn.HeaderText = "Цена";
-            this.ценаDataGridViewTextBoxColumn.Name = "ценаDataGridViewTextBoxColumn";
             // 
             // Form1
             // 

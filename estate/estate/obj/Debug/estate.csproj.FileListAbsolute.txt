@@ -19,3 +19,4 @@ C:\Users\Alex\Desktop\pyQt\estate\estate\obj\Debug\estate.csproj.GenerateResourc
 C:\Users\Alex\Desktop\pyQt\estate\estate\obj\Debug\estate.csproj.CoreCompileInputs.cache
 C:\Users\Alex\Desktop\pyQt\estate\estate\obj\Debug\estate.exe
 C:\Users\Alex\Desktop\pyQt\estate\estate\obj\Debug\estate.pdb
+C:\Users\Alex\Desktop\pyQt\estate\estate\obj\Debug\estate.Test.resources
